@@ -10,11 +10,11 @@ cache:
 node_js:
   - "0.10"
   - "0.12"
-  - "iojs"
+  - "3"
   - "4"
   - "6"
   - "8"
-  - "node"
+  - "9"
 
 install:
   - npm install
