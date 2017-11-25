@@ -32,16 +32,12 @@ describe('Hexo Symbols Count Time', function() {
 
     var post = {
       path: false,
-      content: '---
-title: Test Hexo Symbols Count Time
-date: 2017-11-24 13:04
----
-Count of symbols is 89'
+      content: `---\ntitle: Test Hexo Symbols Count Time\n\ndate: 2017-11-25 12:35\n---\nCount of symbols is 89`
     };
 
-    it('assert (symbolsCount - 89)', function() {
+    it('assert (symbolsCount - 90)', function() {
       var symbols = helper.symbolsCount(post.content);
-      assert.equal(symbols, 89);
+      assert.equal(symbols, 90);
     });
 
     it('assert (symbolsTime without parameters (awl = 5, wpm = 200) - 0:01)', function() {
