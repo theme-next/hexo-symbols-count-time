@@ -11,7 +11,7 @@
 <!--[dep-image]: https://img.shields.io/librariesio/github/theme-next/hexo-symbols-count-time.svg-->
 [doc-image]: https://readthedocs.org/projects/hexo-symbols-count-time/badge/?version=latest
 [rel-image]: https://img.shields.io/github/release/theme-next/hexo-symbols-count-time.svg
-[size-image]: https://img.shields.io/github/size/theme-next/hexo-symbols-count-time/index.js.svg
+[size-image]: https://img.shields.io/github/size/theme-next/hexo-symbols-count-time/lib/helper.js.svg
 
 [mnt-image]: https://img.shields.io/maintenance/yes/2018.svg
 [npm-image]: https://badge.fury.io/js/hexo-symbols-count-time.svg
