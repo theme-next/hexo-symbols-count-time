@@ -19,9 +19,8 @@ matrix:
 # Install scripts. (runs after repo cloning)
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install -g npm
-#  - npm install
-  - npm install npm@5.5.0
+  - npm install -g npm@5.5.0
+  - npm install
 
 cache:
   - node_modules -> package.json
