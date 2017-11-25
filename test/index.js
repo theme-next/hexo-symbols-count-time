@@ -10,7 +10,6 @@ var helper = require('../lib/helper');
 describe('Hexo Symbols Count Time', function() {
 
   describe('Test symbolsCount function & check should / expect / assert', function() {
-
     var symbols = helper.symbolsCount('Count of symbols is 22');
 
     it("should - 22", function() {
@@ -24,6 +23,15 @@ describe('Hexo Symbols Count Time', function() {
 
     it('assert - 22', function() {
       assert.equal(symbols, 22);
+    });
+
+  });
+
+  describe('Test symbolsCount > 1024', function() {
+    var symbols = helper.symbolsCount('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+
+    it('assert - 1k', function() {
+      assert.equal(symbols, '1k');
     });
 
   });
