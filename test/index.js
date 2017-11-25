@@ -32,7 +32,7 @@ describe('Hexo Symbols Count Time', function() {
 
     var post = {
       path: false,
-      content: `---\ntitle: Test Hexo Symbols Count Time\n\ndate: 2017-11-25 12:35\n---\nCount of symbols is 89`
+      content: '---\ntitle: Test Hexo Symbols Count Time\n\ndate: 2017-11-25 12:35\n---\nCount of symbols is 89'
     };
 
     it('assert (symbolsCount - 90)', function() {
