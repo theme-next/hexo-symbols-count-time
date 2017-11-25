@@ -7,7 +7,8 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "test": "mocha test --reporter spec"
+    "test": "mocha test --reporter spec",
+    "test-cov": "istanbul cover --print both _mocha -- test/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "eslint": "^4.10.0",
     "eslint-config-hexo": "^2.0.0",
     "hexo": "^3.2.2",
+    "istanbul": "^0.4.3",
     "mocha": "^2.3.4"
   }
 }

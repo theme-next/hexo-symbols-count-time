@@ -16,8 +16,15 @@ node_js:
   - "8"
   - "9"
 
-install:
-  - npm install
+script:
+  - npm run test-cov
+
+after_script:
+  - npm install coveralls
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
+#install:
+#  - npm install
 
 notifications:
   email: false
