@@ -42,7 +42,7 @@
 Symbols count and time to read of articles.
 
 ## Installation
-[![size-image]](../../blob/master/index.js) <!--[![rel-image]](../../releases)-->
+[![size-image]](../../blob/master/lib/helper.js) <!--[![rel-image]](../../releases)-->
 [![dm-image]][npm-url]
 [![dt-image]][npm-url]
 
