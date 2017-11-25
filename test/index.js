@@ -32,11 +32,11 @@ describe('Hexo Symbols Count Time', function() {
 
     var post = {
       path: false,
-      content: `---
+      content: '---
 title: Test Hexo Symbols Count Time
 date: 2017-11-24 13:04
 ---
-Count of symbols is 89`
+Count of symbols is 89'
     };
 
     it('assert (symbolsCount - 89)', function() {
