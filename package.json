@@ -1,0 +1,31 @@
+{
+  "name": "hexo-symbols-count-time",
+  "description": "Symbols count and time to read for articles.",
+  "main": "index",
+  "version": "0.2.0",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha test --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theme-next/hexo-symbols-count-time.git"
+  },
+  "keywords": [
+    "hexo",
+    "count",
+    "symbols",
+    "time-to-read"
+  ],
+  "author": "Ivan.Nginx <ivan.nginx@gmail.com> (https://almostover.ru)",
+  "license": "LGPL-3.0",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-config-hexo": "^2.0.0",
+    "hexo": "^3.2.2",
+    "mocha": "^4.0.1"
+  }
+}

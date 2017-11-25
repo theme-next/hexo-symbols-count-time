@@ -1,0 +1,64 @@
+'use strict';
+
+var chai   = require('chai');
+var should = chai.should();
+var expect = chai.expect;
+var assert = chai.assert;
+
+var helper = require('../lib/helper');
+
+describe('Hexo Symbols Count Time', function() {
+
+  describe('Test symbolsCount function & check should / expect / assert', function() {
+
+    var symbols = helper.symbolsCount('Count of symbols is 22');
+
+    it("should - 22", function() {
+      symbols.should.exist;
+      symbols.should.eq(22);
+    });
+
+    it("expect - 22", function() {
+      expect(symbols).to.equal(22);
+    });
+
+    it('assert - 22', function() {
+      assert.equal(symbols, 22);
+    });
+
+  });
+
+  describe('Test symbolsCount & symbolsTime', function() {
+
+    var post = {
+      path: false,
+      content: `---
+title: Test Hexo Symbols Count Time
+date: 2017-11-24 13:04
+---
+Count of symbols is 89`
+    };
+
+    it('assert (symbolsCount - 89)', function() {
+      var symbols = helper.symbolsCount(post.content);
+      assert.equal(symbols, 89);
+    });
+
+    it('assert (symbolsTime without parameters (awl = 5, wpm = 200) - 0:01)', function() {
+      var symbols = helper.symbolsTime(post.content);
+      assert.equal(symbols, '0:01');
+    });
+
+    it('assert (symbolsTime [awl = 5, wpm = 5] - 0:04)', function() {
+      var symbols = helper.symbolsTime(post.content, 5, 5);
+      assert.equal(symbols, '0:04');
+    });
+
+    it('assert (symbolsTime [awl = 1, wpm = 50] - 0:02)', function() {
+      var symbols = helper.symbolsTime(post.content, 1, 50);
+      assert.equal(symbols, '0:02');
+    });
+
+  });
+
+});
