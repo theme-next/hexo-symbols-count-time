@@ -14,9 +14,9 @@
 [size-image]: https://img.shields.io/github/size/theme-next/hexo-symbols-count-time/index.js.svg
 
 [mnt-image]: https://img.shields.io/maintenance/yes/2017.svg
-[npm-image]: https://badge.fury.io/js/hexo-symbols-count-time.svg
+<!--[npm-image]: https://badge.fury.io/js/hexo-symbols-count-time.svg-->
 <!--[npm-image]: https://badge.fury.io/gh/theme-next%2Fhexo-symbols-count-time.svg-->
-<!--[npm-image]: https://img.shields.io/npm/v/hexo-symbols-count-time.svg-->
+[npm-image]: https://img.shields.io/npm/v/hexo-symbols-count-time.svg
 [dm-image]: https://img.shields.io/npm/dm/hexo-symbols-count-time.svg
 [dt-image]: https://img.shields.io/npm/dt/hexo-symbols-count-time.svg
 [lic-image]: https://img.shields.io/npm/l/hexo-symbols-count-time.svg
