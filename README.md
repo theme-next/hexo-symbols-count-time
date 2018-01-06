@@ -41,6 +41,8 @@
 
 Symbols count and time to read of articles.
 
+Better then `hexo-reading-time` and faster then `hexo-worcount`. No dependencies.
+
 ## Installation
 [![size-image]](../../blob/master/lib/helper.js) <!--[![rel-image]](../../releases)-->
 [![dm-image]][npm-url]
