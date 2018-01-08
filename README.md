@@ -53,7 +53,7 @@ npm install hexo-symbols-count-time --save
 ```
 
 ## Usage
-Activate this plugin in `_config.yml` by enabled any option:
+Activate this plugin in hexo's `_config.yml` (which locates in the root dir of your blog) by enabled any option:
 ```yml
 symbols_count_time:
   symbols: true
