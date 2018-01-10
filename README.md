@@ -63,14 +63,28 @@ symbols_count_time:
 ```
 If `symbols_count_time` not specified (or commented), plugin will totally disabled.
 
-### Swig
+### NexT theme
+This plugin integrated in «NexT» and after plugin enabled in main Hexo config, need to enable options in NexT config:
 
-#### Symbols Count
+```yml
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: false
+  awl: 5
+  wpm: 200
+```
+
+### Other themes
+
+#### Swig
+
+##### Symbols Count
 ```js
 {{ symbolsCount(post.content) }}
 ```
 
-#### Symbols Time
+##### Symbols Time
 ```js
 {{ symbolsTime(post.content) }}
 ```
@@ -79,12 +93,12 @@ OR
 {{ symbolsTime(post.content, AWL, WPM) }}
 ```
 
-#### Symbols Count Total
+##### Symbols Count Total
 ```js
 {{ symbolsCountTotal(site) }}
 ```
 
-#### Symbols Time Total
+##### Symbols Time Total
 ```js
 {{ symbolsTimeTotal(site) }}
 ```
@@ -93,14 +107,14 @@ OR
 {{ symbolsTimeTotal(site, AWL, WPM) }}
 ```
 
-### EJS
+#### EJS
 
-#### Symbols Count
+##### Symbols Count
 ```ejs
 <%- symbolsCount(post.content) %>
 ```
 
-#### Symbols Time
+##### Symbols Time
 ```ejs
 <%- symbolsTime(post.content) %>
 ```
@@ -109,12 +123,12 @@ OR
 <%- symbolsTime(post.content, AWL, WPM) %>
 ```
 
-#### Symbols Count Total
+##### Symbols Count Total
 ```ejs
 <%- symbolsCountTotal(site) %>
 ```
 
-#### Symbols Time Total
+##### Symbols Time Total
 ```ejs
 <%- symbolsTimeTotal(site) %>
 ```
@@ -123,14 +137,14 @@ OR
 <%- symbolsTimeTotal(site, AWL, WPM) %>
 ```
 
-### Jade
+#### Jade
 
-#### Symbols Count
+##### Symbols Count
 ```jade
 span= symbolsCount(post.content)
 ```
 
-#### Symbols Time
+##### Symbols Time
 ```jade
 span= symbolsTime(post.content)
 ```
@@ -139,12 +153,12 @@ OR
 span= symbolsTime(post.content, AWL, WPM)
 ```
 
-#### Symbols Count Total
+##### Symbols Count Total
 ```jade
 span= symbolsCountTotal(site)
 ```
 
-#### Symbols Time Total
+##### Symbols Time Total
 ```jade
 span= symbolsTimeTotal(site)
 ```
@@ -153,7 +167,7 @@ OR
 span= symbolsTimeTotal(site, AWL, WPM)
 ```
 
-### Parameters
+#### Parameters
 * `AWL` — Average Word Length (chars count in word). Default: `5`. You can check this [here](https://charactercounttool.com).
   * EN &asymp; `5`
   * RU &asymp; `6`
