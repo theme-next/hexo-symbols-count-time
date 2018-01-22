@@ -20,9 +20,9 @@ matrix:
 # Install scripts. (runs after repo cloning)
 install:
   - ps: Install-Product node $env:nodejs_version
-#  - npm install -g npm
+  - npm install -g npm
 # Temporaily fix for node 9
-  - npm install -g npm@5.3
+#  - npm install -g npm@5.3
   - npm install
 
 cache:
