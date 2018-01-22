@@ -179,7 +179,7 @@ span= symbolsTimeTotal(site, AWL, WPM)
 
 ## Development
 
-```
+```bash
 cd hexo
 git clone https://github.com/theme-next/hexo-symbols-count-time.git node_modules/hexo-symbols-count-time
 cd node_modules/hexo-symbols-count-time
@@ -187,10 +187,14 @@ cd node_modules/hexo-symbols-count-time
 
 ### Tests ###
 
-    npm install mocha chai --save-dev
-    npm test
+```bash
+npm install mocha chai --save-dev
+npm test
+```
 
 ### Tests with coverage ###
 
-    npm install -g istanbul
-    istanbul cover --print both node_modules/.bin/_mocha -- test/index.js
+```bash
+npm install -g istanbul
+istanbul cover --print both node_modules/.bin/_mocha -- test/index.js
+```
