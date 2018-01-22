@@ -1,5 +1,5 @@
-[cover-image]: https://coveralls.io/repos/github/theme-next/hexo-symbols-count-time/badge.svg?branch=master
-<!--[cover-image]: https://img.shields.io/coveralls/theme-next/hexo-symbols-count-time/master.svg-->
+<!--[cover-image]: https://coveralls.io/repos/github/theme-next/hexo-symbols-count-time/badge.svg?branch=master-->
+[cover-image]: https://img.shields.io/coveralls/theme-next/hexo-symbols-count-time/master.svg
 [travis-image]: https://travis-ci.org/theme-next/hexo-symbols-count-time.svg?branch=master
 <!--[travis-image]: https://img.shields.io/travis/theme-next/hexo-symbols-count-time/master.svg-->
 [appveyor-image]: https://ci.appveyor.com/api/projects/status/wuewa37rb7nknx31/branch/master?svg=true
