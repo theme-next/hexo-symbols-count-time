@@ -30,6 +30,7 @@
     "eslint": "^4.10.0",
     "eslint-config-hexo": "^2.0.0",
     "hexo": "^3.2.2",
+    "hexo-util": "^0.6.3",
     "istanbul": "^0.4.5",
     "mocha": "^2.5.3"
   }

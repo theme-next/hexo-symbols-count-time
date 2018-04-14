@@ -41,9 +41,10 @@
 
 Symbols count and time to read of articles.
 
-Better then `hexo-reading-time` and faster then `hexo-worcount`. No dependencies.
+Better than [`hexo-reading-time`](https://github.com/ierhyna/hexo-reading-time) and faster than [`hexo-worcount`](https://github.com/willin/hexo-wordcount). No external dependencies.
 
 ## Installation
+
 [![size-image]](../../blob/master/lib/helper.js) <!--[![rel-image]](../../releases)-->
 [![dm-image]][npm-url]
 [![dt-image]][npm-url]
@@ -53,7 +54,9 @@ npm install hexo-symbols-count-time --save
 ```
 
 ## Usage
-Activate this plugin in hexo's `_config.yml` (which locates in the root dir of your blog) by enabled any option:
+
+Activate this plugin in **hexo's `_config.yml`** (which locates in the root dir of your blog) by enabled any option:
+
 ```yml
 symbols_count_time:
   symbols: true
@@ -61,121 +64,36 @@ symbols_count_time:
   total_symbols: true
   total_time: true
 ```
+
 If `symbols_count_time` not specified (or commented), plugin will totally disabled.
 
 ### NexT theme
-This plugin integrated in «NexT» and after plugin enabled in main Hexo config, need to enable options in NexT config:
+
+This plugin integrated in «NexT» and after plugin enabled in main Hexo config, you may adjust options in NexT config:
 
 ```yml
 symbols_count_time:
   separated_meta: true
   item_text_post: true
   item_text_total: false
-  awl: 5
-  wpm: 200
-```
-
-### Other themes
-
-#### Swig
-
-##### Symbols Count
-```js
-{{ symbolsCount(post.content) }}
-```
-
-##### Symbols Time
-```js
-{{ symbolsTime(post.content) }}
-```
-OR
-```js
-{{ symbolsTime(post.content, AWL, WPM) }}
-```
-
-##### Symbols Count Total
-```js
-{{ symbolsCountTotal(site) }}
-```
-
-##### Symbols Time Total
-```js
-{{ symbolsTimeTotal(site) }}
-```
-OR
-```js
-{{ symbolsTimeTotal(site, AWL, WPM) }}
-```
-
-#### EJS
-
-##### Symbols Count
-```ejs
-<%- symbolsCount(post.content) %>
-```
-
-##### Symbols Time
-```ejs
-<%- symbolsTime(post.content) %>
-```
-OR
-```ejs
-<%- symbolsTime(post.content, AWL, WPM) %>
-```
-
-##### Symbols Count Total
-```ejs
-<%- symbolsCountTotal(site) %>
-```
-
-##### Symbols Time Total
-```ejs
-<%- symbolsTimeTotal(site) %>
-```
-OR
-```ejs
-<%- symbolsTimeTotal(site, AWL, WPM) %>
-```
-
-#### Jade
-
-##### Symbols Count
-```jade
-span= symbolsCount(post.content)
-```
-
-##### Symbols Time
-```jade
-span= symbolsTime(post.content)
-```
-OR
-```jade
-span= symbolsTime(post.content, AWL, WPM)
-```
-
-##### Symbols Count Total
-```jade
-span= symbolsCountTotal(site)
-```
-
-##### Symbols Time Total
-```jade
-span= symbolsTimeTotal(site)
-```
-OR
-```jade
-span= symbolsTimeTotal(site, AWL, WPM)
+  awl: 4
+  wpm: 275
 ```
 
 #### Parameters
-* `AWL` — Average Word Length (chars count in word). Default: `5`. You can check this [here](https://charactercounttool.com).
+
+* `AWL` — Average Word Length (chars count in word). Default: `4`. You can check this [here](https://charactercounttool.com).
+  * CN &asymp; `2`
   * EN &asymp; `5`
   * RU &asymp; `6`
-  * CN &asymp; `25`
-* `WPM` — Words Per Minute. Default: `200`. You can check this [here](https://wordcounter.net).
+* `WPM` — Words Per Minute. Default: `275`. You can check this [here](https://wordcounter.net).
   * Slow &asymp; `200`
   * Normal &asymp; `275`
   * Fast &asymp; `350`
+* `Suffix` — If time to read less then 60 minutes, added suffix as string parameter. Default: `mins.`
+
+**Note for Chinese users:** because in Chinese language average word length about `~1.5` and if you at most cases write posts in Chinese (without mixed English), recommended to set `awl` to `2` and `wpm` to `300`.\
+But if you usualy mix your posts with English, `awl` to `4` and `wpm` to `275` will be nice.
 
 ## Development
 
@@ -185,16 +103,60 @@ git clone https://github.com/theme-next/hexo-symbols-count-time.git node_modules
 cd node_modules/hexo-symbols-count-time
 ```
 
-### Tests ###
+### Tests
 
 ```bash
 npm install mocha chai --save-dev
 npm test
 ```
 
-### Tests with coverage ###
+### Tests with coverage
 
 ```bash
 npm install -g istanbul
 istanbul cover --print both node_modules/.bin/_mocha -- test/index.js
 ```
+
+### Templates
+
+#### Symbols Count
+
+```js
+{{ symbolsCount(post.content) }}
+```
+
+#### Symbols Time
+
+```js
+{{ symbolsTime(post.content) }}
+```
+
+Or with predefined parameters:
+
+```js
+{{ symbolsTime(post.content, AWL, WPM, Suffix) }}
+```
+
+#### Symbols Count Total
+
+```js
+{{ symbolsCountTotal(site) }}
+```
+
+#### Symbols Time Total
+
+```js
+{{ symbolsTimeTotal(site) }}
+```
+
+Or with predefined parameters:
+
+```js
+{{ symbolsTimeTotal(site, AWL, WPM, Suffix) }}
+```
+
+#### Renderers syntax
+
+SWIG / Nunjucks: `{{` `template` `}}`\
+EJS: `<%-` `template` `%>`\
+Jade: `span=` `template`
