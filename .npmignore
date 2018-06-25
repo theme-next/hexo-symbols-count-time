@@ -19,3 +19,4 @@ tmp/
 appveyor.yml
 crowdin.yml
 gulpfile.js
+package-lock.json

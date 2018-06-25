@@ -84,17 +84,23 @@ describe('Hexo Symbols Count Time', function() {
 
   describe('Test symbolsTime (< 58 minutes / > 1:08)', function() {
 
-    var lessThenOneHourReading = elevenThousandsSymbols + elevenThousandsSymbols + elevenThousandsSymbols + elevenThousandsSymbols + elevenThousandsSymbols + elevenThousandsSymbols;
-    var moreThenOneHourReading = lessThenOneHourReading + elevenThousandsSymbols;
+    var lessThanOneHourReading = elevenThousandsSymbols + elevenThousandsSymbols + elevenThousandsSymbols + elevenThousandsSymbols + elevenThousandsSymbols + elevenThousandsSymbols;
+    var moreThanOneHourReading = lessThanOneHourReading + elevenThousandsSymbols;
+    var moreThanOneHourReadingAndMoreThanTenMinutes = moreThanOneHourReading + elevenThousandsSymbols;
 
     it('Time: 64218 = 58 => 58 minutes', function() {
-      var symbols = helper.symbolsTime(lessThenOneHourReading, 4, 275, 'minutes');
+      var symbols = helper.symbolsTime(lessThanOneHourReading, 4, 275, 'minutes');
       assert.equal(symbols, '58 minutes');
     });
 
     it('Time: 74921 = 68 => 1:08', function() {
-      var symbols = helper.symbolsTime(moreThenOneHourReading, 4, 275, 'minutes to read');
+      var symbols = helper.symbolsTime(moreThanOneHourReading, 4, 275, 'minutes to read');
       assert.equal(symbols, '1:08');
+    });
+
+    it('Time: 85624 = 78 => 1:18', function() {
+      var symbols = helper.symbolsTime(moreThanOneHourReadingAndMoreThanTenMinutes, 4, 275, 'minutes to read');
+      assert.equal(symbols, '1:18');
     });
 
   });
