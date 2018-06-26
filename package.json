@@ -2,7 +2,7 @@
   "name": "hexo-symbols-count-time",
   "description": "Symbols count and time to read for articles.",
   "main": "index",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "engines": {
     "node": ">= 0.10.0"
   },
