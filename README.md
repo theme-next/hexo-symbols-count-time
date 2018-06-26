@@ -50,7 +50,7 @@ Better than [`hexo-reading-time`](https://github.com/ierhyna/hexo-reading-time) 
 [![dt-image]][npm-url]
 
 ```bash
-npm install hexo-symbols-count-time --save
+$ npm install hexo-symbols-count-time --save
 ```
 
 ## Usage
@@ -98,23 +98,23 @@ But if you usualy mix your posts with English, `awl` to `4` and `wpm` to `275` w
 ## Development
 
 ```bash
-cd hexo
-git clone https://github.com/theme-next/hexo-symbols-count-time.git node_modules/hexo-symbols-count-time
-cd node_modules/hexo-symbols-count-time
+$ cd hexo
+$ git clone https://github.com/theme-next/hexo-symbols-count-time.git node_modules/hexo-symbols-count-time
+$ cd node_modules/hexo-symbols-count-time
 ```
 
 ### Tests
 
 ```bash
-npm install mocha chai --save-dev
-npm test
+$ npm install mocha chai --save-dev
+$ npm test
 ```
 
 ### Tests with coverage
 
 ```bash
-npm install -g istanbul
-istanbul cover --print both node_modules/.bin/_mocha -- test/index.js
+$ npm install -g istanbul
+$ istanbul cover --print both node_modules/.bin/_mocha -- test/index.js
 ```
 
 ### Templates
