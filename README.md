@@ -92,9 +92,9 @@ symbols_count_time:
   * Slow &asymp; `200`
   * Normal &asymp; `275`
   * Fast &asymp; `350`
-* `suffix` – If time to read less then 60 minutes, added suffix as string parameter.
+* `suffix` – If time to read less then 60 minutes, added suffix as string parameter.\
   If not defined, `mins.` will be used as default.
-* `exclude_codeblock` – Allow to exclude all content inside code blocks for more accurate words counting.
+* `exclude_codeblock` – Allow to exclude all content inside code blocks for more accurate words counting.\
   If not defined, `false` will be used as default.
 
 **Note for Chinese users:** because in Chinese language average word length about `~1.5` and if you at most cases write posts in Chinese (without mixed English), recommended to set `awl` to `2` and `wpm` to `300`.\
