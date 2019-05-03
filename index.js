@@ -24,7 +24,6 @@ if (hexo.config.symbols_count_time) {
     hexo.extend.filter.register('after_post_render', function(data) {
       var util = require('hexo-util');
       var stripHTML = util.stripHTML;
-      console.log(stripHTML(data.content));
       data.length = stripHTML(data.content).length;
     }, 0);
   }
