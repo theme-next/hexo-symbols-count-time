@@ -122,19 +122,19 @@ $ istanbul cover --print both node_modules/.bin/_mocha -- test/index.js
 #### Symbols Count
 
 ```js
-{{ symbolsCount(post.content) }}
+{{ symbolsCount(post) }}
 ```
 
 #### Symbols Time
 
 ```js
-{{ symbolsTime(post.content) }}
+{{ symbolsTime(post) }}
 ```
 
 Or with predefined parameters:
 
 ```js
-{{ symbolsTime(post.content, AWL, WPM, Suffix) }}
+{{ symbolsTime(post, AWL, WPM, Suffix) }}
 ```
 
 #### Symbols Count Total
