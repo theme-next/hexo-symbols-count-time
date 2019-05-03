@@ -63,6 +63,7 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
+  exclude_codeblock: false
 ```
 
 If `symbols_count_time` not specified (or commented), plugin will totally disabled.
