@@ -13,7 +13,7 @@
 [rel-image]: https://img.shields.io/github/release/theme-next/hexo-symbols-count-time.svg
 [size-image]: https://img.shields.io/github/size/theme-next/hexo-symbols-count-time/lib/helper.js.svg
 
-[mnt-image]: https://img.shields.io/maintenance/yes/2018.svg
+[mnt-image]: https://img.shields.io/maintenance/yes/2019.svg
 [npm-image]: https://badge.fury.io/js/hexo-symbols-count-time.svg
 <!--[npm-image]: https://badge.fury.io/gh/theme-next%2Fhexo-symbols-count-time.svg-->
 <!--[npm-image]: https://img.shields.io/npm/v/hexo-symbols-count-time.svg-->
