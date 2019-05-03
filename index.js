@@ -20,4 +20,13 @@ if (hexo.config.symbols_count_time) {
     hexo.extend.helper.register('symbolsTimeTotal', helper.symbolsTimeTotal);
   }
 
+  if (hexo.config.symbols_count_time.symbols || hexo.config.symbols_count_time.time || hexo.config.symbols_count_time.total_symbols || hexo.config.symbols_count_time.total_time) {
+    hexo.extend.filter.register('after_post_render', function(data) {
+      var util = require('hexo-util');
+      var stripHTML = util.stripHTML;
+      console.log(stripHTML(data.content));
+      data.length = stripHTML(data.content).length;
+    }, 0);
+  }
+
 }
