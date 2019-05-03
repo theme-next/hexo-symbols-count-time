@@ -24,7 +24,9 @@ if (hexo.config.symbols_count_time) {
     hexo.extend.filter.register('after_post_render', function(data) {
       var util = require('hexo-util');
       var stripHTML = util.stripHTML;
-      data.length = stripHTML(data.content).length;
+      var content = data.content.replace(/<td class=\"gutter\">.*?<\/td>/g, "");
+      if (hexo.config.symbols_count_time.exclude_codeblock) content = content.replace(/<td class=\"code\">.*?<\/td>/g, "");
+      data.length = stripHTML(content).length;
     }, 0);
   }
 
