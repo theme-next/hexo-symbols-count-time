@@ -79,19 +79,23 @@ symbols_count_time:
   item_text_total: false
   awl: 4
   wpm: 275
+  suffix: mins.
 ```
 
 #### Parameters
 
-* `AWL` — Average Word Length (chars count in word). Default: `4`. You can check this [here](https://charactercounttool.com).
+* `awl` – Average Word Length (chars count in word). Default: `4`. You can check this [here](https://charactercounttool.com).
   * CN &asymp; `2`
   * EN &asymp; `5`
   * RU &asymp; `6`
-* `WPM` — Words Per Minute. Default: `275`. You can check this [here](https://wordcounter.net).
+* `wpm` – Words Per Minute. Default: `275`. You can check this [here](https://wordcounter.net).
   * Slow &asymp; `200`
   * Normal &asymp; `275`
   * Fast &asymp; `350`
-* `Suffix` — If time to read less then 60 minutes, added suffix as string parameter. Default: `mins.`
+* `suffix` – If time to read less then 60 minutes, added suffix as string parameter.
+  If not defined, `mins.` will be used as default.
+* `exclude_codeblock` – Allow to exclude all content inside code blocks for more accurate words counting.
+  If not defined, `false` will be used as default.
 
 **Note for Chinese users:** because in Chinese language average word length about `~1.5` and if you at most cases write posts in Chinese (without mixed English), recommended to set `awl` to `2` and `wpm` to `300`.\
 But if you usualy mix your posts with English, `awl` to `4` and `wpm` to `275` will be nice.
@@ -135,7 +139,7 @@ $ istanbul cover --print both node_modules/.bin/_mocha -- test/index.js
 Or with predefined parameters:
 
 ```js
-{{ symbolsTime(post, AWL, WPM, Suffix) }}
+{{ symbolsTime(post, awl, wpm, suffix) }}
 ```
 
 #### Symbols Count Total
@@ -153,7 +157,7 @@ Or with predefined parameters:
 Or with predefined parameters:
 
 ```js
-{{ symbolsTimeTotal(site, AWL, WPM, Suffix) }}
+{{ symbolsTimeTotal(site, awl, wpm, suffix) }}
 ```
 
 #### Renderers syntax
