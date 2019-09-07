@@ -27,7 +27,7 @@
     "eslint": "6.3.0",
     "eslint-config-theme-next": "1.1.2",
     "hexo": "3.9.0",
-    "hexo-util": "1.0.1",
+    "hexo-util": "1.1.0",
     "istanbul": "0.4.5",
     "mocha": "6.2.0"
   }
