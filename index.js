@@ -3,7 +3,7 @@
 if (hexo.config.symbols_count_time) {
 
   const helper = require('./lib/helper');
-  const stripHTML = require('hexo-util').stripHTML;
+  const { stripHTML } = require('hexo-util');
 
   if (hexo.config.symbols_count_time.symbols) {
     hexo.extend.helper.register('symbolsCount', helper.symbolsCount);
