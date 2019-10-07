@@ -1,25 +1,18 @@
-<!--[cover-image]: https://coveralls.io/repos/github/theme-next/hexo-symbols-count-time/badge.svg?branch=master-->
-[cover-image]: https://img.shields.io/coveralls/theme-next/hexo-symbols-count-time/master.svg
-[travis-image]: https://travis-ci.org/theme-next/hexo-symbols-count-time.svg?branch=master
-<!--[travis-image]: https://img.shields.io/travis/theme-next/hexo-symbols-count-time/master.svg-->
-[appveyor-image]: https://ci.appveyor.com/api/projects/status/wuewa37rb7nknx31/branch/master?svg=true
+[cover-image]: https://img.shields.io/coveralls/theme-next/hexo-symbols-count-time/master?style=flat-square
+[travis-image]: https://img.shields.io/travis/theme-next/hexo-symbols-count-time/master?style=flat-square
+[appveyor-image]: https://img.shields.io/appveyor/ci/ivan-nginx/hexo-symbols-count-time/master?style=flat-square
 
-[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg
-[node-image]: https://img.shields.io/node/v/hexo-symbols-count-time.svg
-[dep-image]: https://david-dm.org/theme-next/hexo-symbols-count-time.svg
-<!--[dep-image]: https://img.shields.io/david/theme-next/hexo-symbols-count-time.svg-->
-<!--[dep-image]: https://img.shields.io/librariesio/github/theme-next/hexo-symbols-count-time.svg-->
-[doc-image]: https://readthedocs.org/projects/hexo-symbols-count-time/badge/?version=latest
-[rel-image]: https://img.shields.io/github/release/theme-next/hexo-symbols-count-time.svg
-[size-image]: https://img.shields.io/github/size/theme-next/hexo-symbols-count-time/lib/helper.js.svg
+[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue?style=flat-square
+[node-image]: https://img.shields.io/node/v/hexo-symbols-count-time?style=flat-square
+[doc-image]: https://img.shields.io/readthedocs/hexo-symbols-count-time
+[rel-image]: https://img.shields.io/github/release/theme-next/hexo-symbols-count-time?style=flat-square
+[size-image]: https://img.shields.io/github/size/theme-next/hexo-symbols-count-time/lib/helper.js?style=flat-square
 
-[mnt-image]: https://img.shields.io/maintenance/yes/2019.svg
-[npm-image]: https://badge.fury.io/js/hexo-symbols-count-time.svg
-<!--[npm-image]: https://badge.fury.io/gh/theme-next%2Fhexo-symbols-count-time.svg-->
-<!--[npm-image]: https://img.shields.io/npm/v/hexo-symbols-count-time.svg-->
-[dm-image]: https://img.shields.io/npm/dm/hexo-symbols-count-time.svg
-[dt-image]: https://img.shields.io/npm/dt/hexo-symbols-count-time.svg
-[lic-image]: https://img.shields.io/npm/l/hexo-symbols-count-time.svg
+[mnt-image]: https://img.shields.io/maintenance/yes/2019?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/hexo-symbols-count-time?style=flat-square
+[dm-image]: https://img.shields.io/npm/dm/hexo-symbols-count-time?style=flat-square
+[dt-image]: https://img.shields.io/npm/dt/hexo-symbols-count-time?style=flat-square
+[lic-image]: https://img.shields.io/npm/l/hexo-symbols-count-time?style=flat-square
 
 [cover-url]: https://coveralls.io/github/theme-next/hexo-symbols-count-time?branch=master "Coverage of Tests"
 [travis-url]: https://travis-ci.org/theme-next/hexo-symbols-count-time?branch=master "Travis CI [Linux]"
