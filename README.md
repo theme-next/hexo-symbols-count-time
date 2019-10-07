@@ -1,35 +1,11 @@
-[cover-image]: https://img.shields.io/coveralls/theme-next/hexo-symbols-count-time/master?style=flat-square
-[travis-image]: https://img.shields.io/travis/theme-next/hexo-symbols-count-time/master?style=flat-square
-[appveyor-image]: https://img.shields.io/appveyor/ci/ivan-nginx/hexo-symbols-count-time/master?style=flat-square
-
-[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue?style=flat-square
-[node-image]: https://img.shields.io/node/v/hexo-symbols-count-time?style=flat-square
-[doc-image]: https://img.shields.io/readthedocs/hexo-symbols-count-time
-[rel-image]: https://img.shields.io/github/release/theme-next/hexo-symbols-count-time?style=flat-square
-[size-image]: https://img.shields.io/github/size/theme-next/hexo-symbols-count-time/lib/helper.js?style=flat-square
-
-[mnt-image]: https://img.shields.io/maintenance/yes/2019?style=flat-square
-[npm-image]: https://img.shields.io/npm/v/hexo-symbols-count-time?style=flat-square
-[dm-image]: https://img.shields.io/npm/dm/hexo-symbols-count-time?style=flat-square
-[dt-image]: https://img.shields.io/npm/dt/hexo-symbols-count-time?style=flat-square
-[lic-image]: https://img.shields.io/npm/l/hexo-symbols-count-time?style=flat-square
-
-[cover-url]: https://coveralls.io/github/theme-next/hexo-symbols-count-time?branch=master "Coverage of Tests"
-[travis-url]: https://travis-ci.org/theme-next/hexo-symbols-count-time?branch=master "Travis CI [Linux]"
-[appveyor-url]: https://ci.appveyor.com/project/ivan-nginx/hexo-symbols-count-time/branch/master "AppVeyor [Windows]"
-[hexo-url]: https://hexo.io
-[node-url]: https://nodejs.org/en/download/releases
-[doc-url]: http://hexo-symbols-count-time.readthedocs.io/en/latest/?badge=latest
-[npm-url]: https://www.npmjs.com/package/hexo-symbols-count-time
-
 # hexo-symbols-count-time
+
 [![cover-image]][cover-url]
 [![travis-image]][travis-url]
 [![appveyor-image]][appveyor-url]
 [![hexo-image]][hexo-url]
 [![node-image]][node-url]
 [![npm-image]][npm-url]
-[![mnt-image]](../../commits/master)
 [![lic-image]](LICENSE)
 
 Symbols count and time to read of articles.
@@ -38,7 +14,7 @@ Better than [`hexo-reading-time`](https://github.com/ierhyna/hexo-reading-time) 
 
 ## Installation
 
-[![size-image]](../../blob/master/lib/helper.js) <!--[![rel-image]](../../releases)-->
+![size-image]
 [![dm-image]][npm-url]
 [![dt-image]][npm-url]
 
@@ -158,3 +134,22 @@ Or with predefined parameters:
 SWIG / Nunjucks: `{{` `template` `}}`\
 EJS: `<%-` `template` `%>`\
 Jade: `span=` `template`
+
+[cover-image]: https://img.shields.io/coveralls/theme-next/hexo-symbols-count-time/master?style=flat-square
+[travis-image]: https://img.shields.io/travis/theme-next/hexo-symbols-count-time/master?style=flat-square
+[appveyor-image]: https://img.shields.io/appveyor/ci/ivan-nginx/hexo-symbols-count-time/master?style=flat-square
+[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue?style=flat-square
+[node-image]: https://img.shields.io/node/v/hexo-symbols-count-time?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/hexo-symbols-count-time?style=flat-square
+[lic-image]: https://img.shields.io/npm/l/hexo-symbols-count-time?style=flat-square
+
+[size-image]: https://img.shields.io/github/languages/code-size/theme-next/hexo-symbols-count-time?style=flat-square
+[dm-image]: https://img.shields.io/npm/dm/hexo-symbols-count-time?style=flat-square
+[dt-image]: https://img.shields.io/npm/dt/hexo-symbols-count-time?style=flat-square
+
+[cover-url]: https://coveralls.io/github/theme-next/hexo-symbols-count-time?branch=master "Coverage of Tests"
+[travis-url]: https://travis-ci.org/theme-next/hexo-symbols-count-time?branch=master "Travis CI [Linux]"
+[appveyor-url]: https://ci.appveyor.com/project/ivan-nginx/hexo-symbols-count-time/branch/master "AppVeyor [Windows]"
+[hexo-url]: https://hexo.io
+[node-url]: https://nodejs.org/en/download/releases
+[npm-url]: https://www.npmjs.com/package/hexo-symbols-count-time
