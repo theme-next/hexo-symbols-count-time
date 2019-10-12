@@ -19,7 +19,7 @@ Better than [`hexo-reading-time`](https://github.com/ierhyna/hexo-reading-time) 
 [![dt-image]][npm-url]
 
 ```bash
-$ npm install hexo-symbols-count-time --save
+$ npm install hexo-symbols-count-time
 ```
 
 ## Usage
