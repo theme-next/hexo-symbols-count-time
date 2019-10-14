@@ -28,5 +28,4 @@ if (hexo.config.symbols_count_time) {
       data.length = stripHTML(content).replace(/\n/g, '').length;
     }, 0);
   }
-
 }
