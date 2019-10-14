@@ -8,9 +8,9 @@
 [![appveyor-image]][appveyor-url]
 [![lic-image]](LICENSE)
 
-Symbols count and time to read of articles.
+Symbols count and time to read for articles in Hexo blog.
 
-Better than [`hexo-reading-time`](https://github.com/ierhyna/hexo-reading-time) and faster than [`hexo-worcount`](https://github.com/willin/hexo-wordcount). No external dependencies.
+Better than [`hexo-reading-time`](https://github.com/ierhyna/hexo-reading-time) and faster than [`hexo-wordcount`](https://github.com/willin/hexo-wordcount). No external dependencies.
 
 ## Installation
 
@@ -24,7 +24,7 @@ $ npm install hexo-symbols-count-time
 
 ## Usage
 
-Activate this plugin in **hexo's `_config.yml`** (which locates in the root dir of your blog) by enabled any option:
+You can set options of hexo-symbols-count-time in the **Hexo's `_config.yml`** (which locates in the root dir of your blog):
 
 ```yml
 symbols_count_time:
@@ -35,23 +35,9 @@ symbols_count_time:
   exclude_codeblock: false
 ```
 
-If `symbols_count_time` not specified (or commented), plugin will totally disabled.
+If `symbols_count_time` option is not specified, the default parameters will be used.
 
-### NexT theme
-
-This plugin integrated in «NexT» and after plugin enabled in main Hexo config, you may adjust options in NexT config:
-
-```yml
-symbols_count_time:
-  separated_meta: true
-  item_text_post: true
-  item_text_total: false
-  awl: 4
-  wpm: 275
-  suffix: mins.
-```
-
-#### Parameters
+### Parameters
 
 * `awl` – Average Word Length (chars count in word). Default: `4`. You can check this [here](https://charactercounttool.com).
   * CN &asymp; `2`
@@ -68,6 +54,19 @@ symbols_count_time:
 
 **Note for Chinese users:** because in Chinese language average word length about `~1.5` and if you at most cases write posts in Chinese (without mixed English), recommended to set `awl` to `2` and `wpm` to `300`.\
 But if you usualy mix your posts with English, `awl` to `4` and `wpm` to `275` will be nice.
+
+### NexT theme
+
+This plugin integrated in «NexT» and after plugin enabled in main Hexo config, you may adjust options in NexT config:
+
+```yml
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: false
+  awl: 4
+  wpm: 275
+```
 
 ## Development
 
