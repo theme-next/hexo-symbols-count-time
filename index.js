@@ -33,6 +33,6 @@ if (config.symbols || config.time || config.total_symbols || config.total_time) 
   hexo.extend.filter.register('after_post_render', function(data) {
     var content = data.content;
     if (config.exclude_codeblock) content = content.replace(/<pre>.*?<\/pre>/g, '');
-    data.length = stripHTML(content).replace(/\n/g, '').length;
+    data.length = stripHTML(content).replace(/\r?\n|\r/g, '').replace(/\s+/g, '').length;
   }, 0);
 }
