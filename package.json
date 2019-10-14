@@ -2,7 +2,7 @@
   "name": "hexo-symbols-count-time",
   "description": "Symbols count and time to read for articles.",
   "main": "index",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "engines": {
     "node": ">=8.6.0"
   },
@@ -22,12 +22,14 @@
   ],
   "author": "Ivan.Nginx <ivan.nginx@gmail.com> (https://almostover.ru)",
   "license": "LGPL-3.0",
+  "dependencies": {
+    "hexo-util": "1.4.0"
+  },
   "devDependencies": {
     "chai": "4.2.0",
     "eslint": "6.5.1",
     "eslint-config-theme-next": "1.1.3",
     "hexo": "3.9.0",
-    "hexo-util": "1.4.0",
     "istanbul": "0.4.5",
     "mocha": "6.2.1"
   }
