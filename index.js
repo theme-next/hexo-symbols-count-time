@@ -1,31 +1,38 @@
+/* global hexo */
+
 'use strict';
 
-if (hexo.config.symbols_count_time) {
+const helper = require('./lib/helper');
+const { stripHTML } = require('hexo-util');
 
-  const helper = require('./lib/helper');
-  const { stripHTML } = require('hexo-util');
+var config = hexo.config.symbols_count_time = Object.assign({
+  symbols: true,
+  time: true,
+  total_symbols: true,
+  total_time: true,
+  exclude_codeblock: false
+}, hexo.config.symbols_count_time);
 
-  if (hexo.config.symbols_count_time.symbols) {
-    hexo.extend.helper.register('symbolsCount', helper.symbolsCount);
-  }
+if (config.symbols) {
+  hexo.extend.helper.register('symbolsCount', helper.symbolsCount);
+}
 
-  if (hexo.config.symbols_count_time.time) {
-    hexo.extend.helper.register('symbolsTime', helper.symbolsTime);
-  }
+if (config.time) {
+  hexo.extend.helper.register('symbolsTime', helper.symbolsTime);
+}
 
-  if (hexo.config.symbols_count_time.total_symbols) {
-    hexo.extend.helper.register('symbolsCountTotal', helper.symbolsCountTotal);
-  }
+if (config.total_symbols) {
+  hexo.extend.helper.register('symbolsCountTotal', helper.symbolsCountTotal);
+}
 
-  if (hexo.config.symbols_count_time.total_time) {
-    hexo.extend.helper.register('symbolsTimeTotal', helper.symbolsTimeTotal);
-  }
+if (config.total_time) {
+  hexo.extend.helper.register('symbolsTimeTotal', helper.symbolsTimeTotal);
+}
 
-  if (hexo.config.symbols_count_time.symbols || hexo.config.symbols_count_time.time || hexo.config.symbols_count_time.total_symbols || hexo.config.symbols_count_time.total_time) {
-    hexo.extend.filter.register('after_post_render', function(data) {
-      var content = data.content;
-      if (hexo.config.symbols_count_time.exclude_codeblock) content = content.replace(/<pre>.*?<\/pre>/g, '');
-      data.length = stripHTML(content).replace(/\n/g, '').length;
-    }, 0);
-  }
+if (config.symbols || config.time || config.total_symbols || config.total_time) {
+  hexo.extend.filter.register('after_post_render', function(data) {
+    var content = data.content;
+    if (config.exclude_codeblock) content = content.replace(/<pre>.*?<\/pre>/g, '');
+    data.length = stripHTML(content).replace(/\n/g, '').length;
+  }, 0);
 }
