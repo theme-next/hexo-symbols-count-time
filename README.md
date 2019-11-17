@@ -86,8 +86,8 @@ $ npm test
 ### Tests with coverage
 
 ```bash
-$ npm install -g istanbul
-$ istanbul cover --print both node_modules/.bin/_mocha -- test/index.js
+$ npm install -g nyc
+$ nyc --print both node_modules/.bin/_mocha -- test/index.js
 ```
 
 ### Templates
