@@ -13,7 +13,7 @@ var config = hexo.config.symbols_count_time = Object.assign({
   exclude_codeblock: false,
   awl: 4,
   wpm: 275,
-  suffix: "min."
+  suffix: "mins."
 }, hexo.config.symbols_count_time);
 
 helper.setConfig(config);
