@@ -10,8 +10,13 @@ var config = hexo.config.symbols_count_time = Object.assign({
   time: true,
   total_symbols: true,
   total_time: true,
-  exclude_codeblock: false
+  exclude_codeblock: false,
+  awl: 4,
+  wpm: 275,
+  suffix: "mins."
 }, hexo.config.symbols_count_time);
+
+helper.setConfig(config);
 
 if (config.symbols) {
   hexo.extend.helper.register('symbolsCount', helper.symbolsCount);

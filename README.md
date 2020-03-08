@@ -33,6 +33,9 @@ symbols_count_time:
   total_symbols: true
   total_time: true
   exclude_codeblock: false
+  awl: 4
+  wpm: 275
+  suffix: "mins."
 ```
 
 If `symbols_count_time` option is not specified, the default parameters will be used.
@@ -64,8 +67,6 @@ symbols_count_time:
   separated_meta: true
   item_text_post: true
   item_text_total: false
-  awl: 4
-  wpm: 275
 ```
 
 ## Development
