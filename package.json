@@ -23,7 +23,7 @@
   "author": "Ivan.Nginx <ivan.nginx@gmail.com> (https://almostover.ru)",
   "license": "LGPL-3.0",
   "dependencies": {
-    "hexo-util": "1.9.0"
+    "hexo-util": "2.7.0"
   },
   "devDependencies": {
     "chai": "4.2.0",
