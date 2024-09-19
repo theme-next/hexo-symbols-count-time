@@ -31,6 +31,6 @@
     "eslint-config-theme-next": "1.1.4",
     "hexo": "4.2.0",
     "mocha": "7.1.1",
-    "nyc": "15.0.1"
+    "nyc": "17.1.0"
   }
 }
