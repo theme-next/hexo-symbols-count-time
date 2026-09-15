@@ -154,8 +154,12 @@ Jade: `span=` `template`
 [travis-url]: https://travis-ci.org/theme-next/hexo-symbols-count-time?branch=master "Travis CI [Linux]"
 [appveyor-url]: https://ci.appveyor.com/project/ivan-nginx/hexo-symbols-count-time/branch/master "AppVeyor [Windows]"
 
-## Code friends
+## Contributors
 
-<a href="https://github.com/theme-next/hexo-symbols-count-time/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=continuedev/continue&max=500" />
-</a>
+Thank you to the entire Continue community for helping us create a pioneering coding agent.
+
+What we built together pushed the boundaries of what AI developer tooling could be.
+
+We hope this codebase continues to serve as a foundation for others!
+
+[CONTRIBUTORS.md](CONTRIBUTORS.md)
