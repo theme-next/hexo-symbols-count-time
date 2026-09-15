@@ -153,3 +153,9 @@ Jade: `span=` `template`
 [cover-url]: https://coveralls.io/github/theme-next/hexo-symbols-count-time?branch=master "Coverage of Tests"
 [travis-url]: https://travis-ci.org/theme-next/hexo-symbols-count-time?branch=master "Travis CI [Linux]"
 [appveyor-url]: https://ci.appveyor.com/project/ivan-nginx/hexo-symbols-count-time/branch/master "AppVeyor [Windows]"
+
+## Code friends
+
+<a href="https://github.com/theme-next/hexo-symbols-count-time/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=continuedev/continue&max=500" />
+</a>
