@@ -1,5 +1,11 @@
 {
+  "projectName": "hexo-symbols-count-time",
+  "projectOwner": "theme-next",
+  "repoType": "github",
   "files": [
     "CONTRIBUTORS.md"
-  ]
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributorsPerLine": 7
 }
