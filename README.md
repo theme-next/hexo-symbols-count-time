@@ -162,4 +162,6 @@ What we built together pushed the boundaries of what AI developer tooling could 
 
 We hope this codebase continues to serve as a foundation for others!
 
-[CONTRIBUTORS.md](CONTRIBUTORS.md)
+<a href="https://github.com/theme-next/hexo-symbols-count-time/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=theme-next/hexo-symbols-count-time&max=500" />
+</a>
